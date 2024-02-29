@@ -15,10 +15,14 @@ async function getData(result = 9, gender = '') {
 }
 
 function getParameters() {
+  let result;
   const results = resultsInput.value;
   const genders = genderInput.value;
 
-  return getData(results, genders);
+  if(results)
+    result = result
+
+  return getData(result, genders);
 }
 
 export { getParameters, resultsInput, genderInput, fetchUsersBtn };
