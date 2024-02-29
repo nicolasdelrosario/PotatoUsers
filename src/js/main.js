@@ -7,6 +7,7 @@ async function displayUsers() {
   cardContainer.innerHTML = ''; 
 
   const users = await getParameters();
+  
   users.forEach(user => {
     const element = `
       <li class="user__card-item text-center">
