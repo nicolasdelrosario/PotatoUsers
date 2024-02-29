@@ -1,0 +1,124 @@
+@import './src/modules/user-card.css';
+@import './src/modules/input.css';
+@import './src/modules/button.css';
+
+:root {
+  /* Colors */
+  --primary-color: #7A84F5;
+  --secondary-color: #C17AF5;
+  --soft-purple: #D6CCF5;
+  --text-color: #3E3263;
+  --white: #fff;
+
+
+  /* Font and typography */
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px | 1rem = 16px */
+  --h1-font-size: 1.8rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+
+  /* Font weight */
+  --font-normal: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Margins bottom */
+  /* .5rem = 8px | 1rem = 16px */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    /* .5rem = 8px | 1rem = 16px */
+    --h1-font-size: 2.25rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--soft-purple);
+  font-family: var(--body-font);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Reusable CSS Classes */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+}
+
+.mt-1-5 {
+  margin-top: var(--mb-1-5);
+}
+
+/* Layout */
+.container {
+  margin: 4rem var(--mb-1);
+}
+
+.section {
+  padding: 2rem 0 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 4rem auto;
+    max-width: 968px;
+  }
+
+  .section {
+    padding: 2rem 0 2rem;
+  }
+}

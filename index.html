@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potato Users</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./global.css">
+  <!-- Font Family - Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section class="main__section section">
+      <h1 class="title text-center">Potato Users</h1>
+      <div class="container ">
+        <div>
+          <button id="fetchUsersBtn" class="btn">Obtener Usuarios</button>
+          <input id="resultsInput" class="input" type="text" placeholder="Número de Usuarios">
+        </div>
+        <div class="mt-1-5">
+          <label class="input__text" for="genderInput">Género</label>
+          <select class="input" name="" id="genderInput">
+            <option value="">Cualquiera</option>
+            <option value="1">Hombre</option>
+            <option value="2">Mujer</option>
+          </select>
+        </div>
+
+        <ul id="cardContainer" class="user__card-container container grid">
+
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="./src/main.js"></script>
+</body>
+
+</html>

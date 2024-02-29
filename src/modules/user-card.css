@@ -1,0 +1,29 @@
+.user__card-container {
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  );
+  justify-items: center;
+}
+
+.user__card-item {
+  min-width: 300px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--white);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.user__card-img {
+  border-radius: 50%;
+  padding-bottom: 16px;
+}
+
+.user__card-name {
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h3-font-size);
+}
+
+.user__card-text {
+  row-gap: 1rem;
+}

@@ -1,0 +1,9 @@
+.input {
+  border-radius: 8px;
+  font-size: calc(var(--normal-font-size) + .25rem);
+  padding: 0.65rem 1.25rem;
+}
+
+.input__text {
+  font-size: calc(var(--normal-font-size) + .25rem);
+}
